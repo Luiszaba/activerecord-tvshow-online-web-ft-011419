@@ -31,7 +31,7 @@ end
 def self.shows_by_alphabetical_order
   all_shows = []
   all_shows = Show.all
-  all_shows
+  all_shows.asc
 end
 end
 
