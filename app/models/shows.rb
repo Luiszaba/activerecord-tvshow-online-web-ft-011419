@@ -13,3 +13,4 @@ end
 def self.lowest_rating
   Show.minimum(:rating)
 end
+end
