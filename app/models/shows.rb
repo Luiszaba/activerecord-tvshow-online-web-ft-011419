@@ -25,7 +25,7 @@ end
 def self.popular_shows
   Show.where("ratings > 5", self.ratings_sum).first
 end
-
+end
 
 
 
