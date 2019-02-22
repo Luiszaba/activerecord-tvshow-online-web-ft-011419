@@ -27,8 +27,13 @@ def self.popular_shows
   popular_shows = Show.where("rating > 5")
   popular_shows
 end
-end
 
+def self.shows_by_alphabetical_order
+  all_shows = []
+  all_shows = Show.all.sort
+  all_shows
+end
+end
 
 
 
