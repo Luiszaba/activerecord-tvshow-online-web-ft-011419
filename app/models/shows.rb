@@ -30,8 +30,8 @@ end
 
 def self.shows_by_alphabetical_order
   all_shows = []
-  all_shows = Show.all
-  all_shows.asc
+  all_shows = Show.all.order
+  all_shows
 end
 end
 
