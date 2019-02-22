@@ -13,4 +13,8 @@ end
 def self.lowest_rating
   Show.minimum(:rating)
 end
+
+def self.least_popular_show
+  Show.where("rating = ?", self.lowest_rating).first
+end
 end
