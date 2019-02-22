@@ -23,9 +23,7 @@ def self.ratings_sum
 end
 
 def self.popular_shows
-  popular_show = []
-  popular_show = Show.where("ratings > 5")
-  popular_show
+  Show.where("ratings > 5")
 end
 end
 
