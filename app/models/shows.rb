@@ -30,7 +30,7 @@ end
 
 def self.shows_by_alphabetical_order
   all_shows = []
-  all_shows = Show.all.order
+  all_shows = Show.order(:name)
   all_shows
 end
 end
